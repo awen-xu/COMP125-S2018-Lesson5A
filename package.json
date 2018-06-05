@@ -1,7 +1,7 @@
 {
   "name": "comp125-s2018-lesson5a",
   "version": "1.0.0",
-  "description": "",
+  "description": "class demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/CentennialCollege/COMP125-S2018-Lesson4A#readme",
   "dependencies": {
+    "@types/jquery": "^3.3.2",
     "bootstrap": "^4.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^4.1.0"
   }
 }

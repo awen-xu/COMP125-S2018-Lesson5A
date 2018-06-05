@@ -2,7 +2,8 @@
 
 // IIFE - Immediately Invoked Function Expression
 // anonymous self executing function
-let app = (function () {
+let app;
+(function (app) {
     "use strict"
 
     // About Button Click event handler
@@ -20,6 +21,7 @@ let app = (function () {
         event.currentTarget.style.opacity = 1.0;
     }
 
+    /*
     function HomeContent() {
         let AboutButton = document.getElementById("AboutButton");
 
@@ -30,6 +32,7 @@ let app = (function () {
         AboutButton.addEventListener("mouseover", AboutButtonOver);
         AboutButton.addEventListener("mouseout", AboutButtonOut);
     }
+    */
 
     function ReturnPI() {
         return Math.PI;
@@ -128,7 +131,9 @@ let app = (function () {
 
             switch (title) {
                 case "COMP125 - Home":
-                    HomeContent();
+                    // HomeContent();
+
+                    content.HomeContent();
                     break;
 
                 case "COMP125 - About":
@@ -155,9 +160,11 @@ let app = (function () {
     window.addEventListener("load", Start);
 
 
-    return {
-        title: document.title
+    // these are all app properties
+    app.title = document.title;
 
-    };
+    app.brandImg = document.getElementsByTagName("img")[0];
 
-})();
+
+
+})(app || (app = {}));
