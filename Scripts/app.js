@@ -21,18 +21,6 @@ let app;
         event.currentTarget.style.opacity = 1.0;
     }
 
-    /*
-    function HomeContent() {
-        let AboutButton = document.getElementById("AboutButton");
-
-        AboutButton.textContent = "About";
-
-        // About Button event listener
-        AboutButton.addEventListener("click", AboutButtonClick);
-        AboutButton.addEventListener("mouseover", AboutButtonOver);
-        AboutButton.addEventListener("mouseout", AboutButtonOut);
-    }
-    */
 
     function ReturnPI() {
         return Math.PI;
